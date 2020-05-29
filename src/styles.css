@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    text-align: center;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.container {
+    height: 800px;
+    background-color: royalblue;
+}
+
+form {
+    background-color: white;
+    margin-top: 200px;
+    padding: 20px;
+    width: 300px;
+    display: inline-block;
+}
+
+input {
+    margin: 10px 0;
+}
+
+#cap_inicial {
+    padding: 10px;
+    border: 2px solid rgba(80, 62, 62, 0.219);
+}
+
+
+#interes {
+    padding: 10px;
+    border: 2px solid rgba(80, 62, 62, 0.219);
+}
+h1 {
+    font-size: xx-large;
+    font-weight: 400;
+    font-family: inherit;
+}
