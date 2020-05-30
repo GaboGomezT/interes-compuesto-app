@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Particles from 'react-particles-js';
 import "./styles.css";
 function App() {
   const [capInic, setCapInic] = useState(0);
@@ -30,6 +31,7 @@ function App() {
         {formatter.format(Math.floor(resultado * interes, 2))} al año <br></br>
         {formatter.format(Math.floor(resultado * interes / 12, 2))} al mes
       </form>
+      <Particles id="particle-canvas"></Particles>
     </div>
   );
 }
