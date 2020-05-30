@@ -19,7 +19,7 @@ function App() {
           let res = parseInt(e.target.value) * Math.pow(1 + parseFloat(interes), años);
           setResultado(Math.floor(res, 2))
         }}></input><br />
-        <input type="number" id="interes" placeholder="Interés" min="0.01" max="1.0" step="0.001" onChange={(e) => {
+        <input type="number" id="interes" placeholder="Tasa de Rendimiento" size="50" min="0.01" max="1.0" step="0.001" onChange={(e) => {
           setInteres(parseFloat(e.target.value));
           let res = parseInt(capInic) * Math.pow(1 + parseFloat(e.target.value), años);
           setResultado(Math.floor(res, 2))
