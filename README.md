@@ -1,68 +1,41 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Calculadora de Interés Compuesto
 
-## Available Scripts
+    El interés compuesto es un concepto de las finanzas que explica cómo puede multiplicarse una inversión dado cierta cantidad de tiempo. 
+[Aquí un buen artículo que lo explica a fondo.](https://www.bbva.com/es/guia-de-finanzas-para-no-financieros-interes-compuesto/)
 
-In the project directory, you can run:
+Interactua con la app aquí: [Demo](https://interest-compuesto-react.web.app/) (Desplegado usando Firebase Storage)
 
-### `npm start`
+## Objetivos
+* Echar un clavado al frontend usando ReactJS
+* Revisar styling con vanilla CSS
+* Aprender a desplegar un frontend en firebase
+* Aprender cómo integrar otros componentes como react-particles-js en tu app
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### ¿Cómo se usa?
+1. Ingresas una capital inicial que es el dinero que pondrás por ejemplo en una cuenta de ahorro.
+2. Selecciona una tasa de rendimiento con la que simularás tu inversión. **Los valores son del 0 al 1 (Ejemplo el 3.4% de tasa de interés lo pones como 0.034)**
+3. Utilizando el slider selecciona por cuantos años dejas tu dinero sentado generando rendimiento.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+El primer resultado verás la cantidad acumulada y más abajo se despliega tu rendimiento si dejaras tu cuenta otro año con la misma tasa.
 
-### `npm test`
+Así podemos jugar con algunos números y empezar a visualizar cuanto dinero tendremos que ahorrar para poder vivir de nuestras inversiones.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![alt_text](screenshot.JPG)
 
-### `npm run build`
+## Instalación
+```
+git clone https://github.com/GaboGomez09/interes-compuesto-app.git
+cd interes-compuesto-app
+npm install
+npm start
+```
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## TODO
+- [ ] Arreglar CSS para que el formulario no se mueva cuando le haces scroll
+- [ ] Refactor con filosofía de componentes _in mind_
+- [ ] Automatizar CD con github actions
+- [ ] Usar buenas prácticas de styling
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+_¡Siéntanse de hacer fork de este proyecto y mandar un pull request si ven una mejora!_
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+**Happy Coding!** :star: :alien: :star:
