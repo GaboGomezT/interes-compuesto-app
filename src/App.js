@@ -10,6 +10,9 @@ function App() {
 
   return (
     <div className="container">
+      <div className="title-container">
+        <h1 className="title">Calculadora de Interés Compuesto</h1>
+      </div>
       <form>
         <input type="text" id="cap_inicial" placeholder="Capital inicial" onChange={(e) => {
           setCapInic(e.target.value);
@@ -22,16 +25,33 @@ function App() {
           setResultado(Math.floor(res, 2))
         }}></input><br />
         <label>Años (de 1 a 50): {años}</label><br></br>
-        <input type="range" id="vol" name="vol" min="1" max="50" onChange={(e) => {
+        <input type="range" id="vol" name="vol" min="1" max="50" value={años} onChange={(e) => {
           setAños(e.target.valueAsNumber)
           let res = parseInt(capInic) * Math.pow(1 + parseFloat(interes), e.target.valueAsNumber);
           setResultado(Math.floor(res, 2))
         }}></input><br /><br />
         <h1>{formatter.format(resultado)}</h1>
-        {formatter.format(Math.floor(resultado * interes, 2))} al año <br></br>
-        {formatter.format(Math.floor(resultado * interes / 12, 2))} al mes
+        <p>{formatter.format(resultado)} x {interes * 100}% => {formatter.format(Math.floor(resultado * interes, 2))} al año</p>
+        <p>{formatter.format(Math.floor(resultado * interes, 2))}/12 meses => {formatter.format(Math.floor(resultado * interes / 12, 2))} al mes</p>
       </form>
-      <Particles id="particle-canvas"></Particles>
+      <Particles id="particle-canvas" params={{
+        "particles": {
+          "number": {
+            "value": 50
+          },
+          "size": {
+            "value": 3
+          }
+        },
+        "interactivity": {
+          "events": {
+            "onhover": {
+              "enable": true,
+              "mode": "repulse"
+            }
+          }
+        }
+      }}></Particles>
     </div>
   );
 }
