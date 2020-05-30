@@ -36,6 +36,6 @@ npm start
 - [ ] Automatizar CD con github actions
 - [ ] Usar buenas prácticas de styling
 
-_¡Siéntanse de hacer fork de este proyecto y mandar un pull request si ven una mejora!_
+_¡Siéntanse libres de hacer fork de este proyecto y mandar un pull request si ven una mejora!_
 
 **Happy Coding!** :star: :alien: :star:
